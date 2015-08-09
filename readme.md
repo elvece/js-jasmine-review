@@ -1,6 +1,6 @@
 ## Jasmine Testing Review
 
-***This repo contains my solution to the followin exercise:***
+***This repo contains my solution to the following exercise:***
 
 ### Steps
 
