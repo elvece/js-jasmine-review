@@ -30,7 +30,15 @@ describe('Problem 3', function() {
   });
 });
 
-
+//Problem 4
+// Write a function that takes a random number from 0 to 100 as an argument and returns the all the odd numbers from 40 to that random number in an array. If the number is smaller than 40, return all the numbers down to the randomized one in an array - i.e., if the number is 37, you should return [40, 39, 38, 37].
+describe('Problem 4', function() {
+  it('should return all even numbers until random number', function() {
+    expect(code.fortyUpOrDown(50)).toEqual([41,43,45,47,49]);
+    expect(code.fortyUpOrDown(37)).toEqual([40, 39, 38, 37]);
+    expect(code.fortyUpOrDown(101)).toEqual("Not a number 1 - 100");
+  });
+});
 
 
 

@@ -41,8 +41,27 @@ function evenNumbers(num){
   }
 }
 
-console.log(evenNumbers(10));
-
+//Problem 4
+function fortyUpOrDown(num){
+  var arr = [];
+  if (num >= 40 && num <=100){
+    for (var i = 40; i < num; i++) {
+      if (i % 2 !== 0){
+        arr.push(i);
+      }
+    }
+    return arr;
+  }
+  else if (num >= 0 && num <= 40){
+    for (var j = 40; j >= num; j--) {
+        arr.push(j);
+    }
+    return arr;
+  }
+  else {
+    return "Not a number 1 - 100";
+  }
+}
 
 
 
@@ -54,5 +73,6 @@ console.log(evenNumbers(10));
 module.exports = {
   largestNumber: largestNumber,
   oddNumbers: oddNumbers,
-  evenNumbers: evenNumbers
+  evenNumbers: evenNumbers,
+  fortyUpOrDown: fortyUpOrDown
 };
