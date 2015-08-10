@@ -37,7 +37,7 @@ function evenNumbers(num){
     return arr;
   }
   else {
-    return "Not a number 1 - 100";
+    return "Not a number 0 - 100";
   }
 }
 
@@ -59,13 +59,29 @@ function fortyUpOrDown(num){
     return arr;
   }
   else {
-    return "Not a number 1 - 100";
+    return "Not a number 0 - 100";
   }
 }
 
+//Problem 5
+function sumDigits(num){
+  var arr = [];
+  var numStr = num.toString();
+  var numSplit = numStr.split("").map(function(item){
+    return parseInt(item);
+  });
+  var total = 0;
 
-
-
+  if (num >= 0 && num <= 10000){
+    for (var i = 0; i < numSplit.length; i++) {
+      total += numSplit[i];
+    }
+    return total;
+  }
+  else {
+    return "Not a number 0 - 10,000";
+  }
+}
 
 
 
@@ -74,5 +90,6 @@ module.exports = {
   largestNumber: largestNumber,
   oddNumbers: oddNumbers,
   evenNumbers: evenNumbers,
-  fortyUpOrDown: fortyUpOrDown
+  fortyUpOrDown: fortyUpOrDown,
+  sumDigits: sumDigits
 };
