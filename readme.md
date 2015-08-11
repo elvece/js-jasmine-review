@@ -1,6 +1,8 @@
 ## Jasmine Testing Review
 
+***Note:*** **Problems 1 - 5 were solved easily, assignment remains incomplete due to a sufficient grasp in understanding. Will finish at a later time**
 ***This repo contains my solution to the following exercise:***
+
 
 ### Steps
 
